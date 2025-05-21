@@ -6,7 +6,7 @@
   outline: none;
   border: none;
   box-sizing: border-box;
-text-decoration: none;
+  text-decoration: none;
 }
 
 body {
@@ -229,12 +229,19 @@ body {
   width: 30rem;
   border: 1px solid #ccc;
   border-radius: 5%;
+  transition: all 0.2s ease;
+}
+
+.project-card:hover {
+  width: 31rem;
 }
 
 .project-image {
   border-radius: 5%;
   background-color: #ccc;
-  height: 200px;
+  height: auto;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
 }
 
 .project-card-info {
@@ -349,7 +356,7 @@ body {
   max-width: 50rem;
 }
 
-.download-button{
+.download-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -369,8 +376,8 @@ body {
   cursor: pointer;
 }
 
-.download-button:hover{
- background-color:#a970ff42;
+.download-button:hover {
+  background-color: #a970ff42;
 }
 
 @media (max-width: 2000px) {
